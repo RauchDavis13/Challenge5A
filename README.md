@@ -30,10 +30,11 @@ The purpose of this excercise is to modify existing code for a single day busine
 ## Git
 
 Git repository (Challenge5) to hold assignment code and README.md.
+https://github.com/RauchDavis13/Challenge5A.git
 
 
 - Successfully created live Git based URL
-
+https://rauchdavis13.github.io/Challenge5A/
 
 
 ## Thank you's....

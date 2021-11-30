@@ -30,6 +30,8 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  background-color: white;
+
 }
 
 .row {
@@ -38,8 +40,11 @@ textarea{
   /* border: 1px solid black;; */
 }
 
-.hour {
-  background-color: #ffffff;
+#hour-box {
+  margin: .5em;
+  border-left: 1px solid black;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   color: #000000;
   border-top: 1px dashed #000000;
 }

@@ -22,11 +22,15 @@ $(document).ready(function() {
     $(".time-block").each(function () {
         //identifies and uses hour value from timeblock id for comparison to current time
         var timeBlock = parseInt($(this).attr("id").split("time")[1]);
+        if (timeBlock <=6) {
+          timeBlock = timeBlock+12;
+        }
         console.log(timeBlock);
+        console.log(hourCurrent);
 
         // compares timeb-lock hour to current hour and identifies and styles timeblocks in the past
         if (timeBlock < hourCurrent) {
-            $(this).find(".description").addClass('past');
+           $(this).find(".description").addClass("past");
          }
         // compares time-block hour to current hour and identifies and style timeblock in the present hour
         else if (timeBlock === hourCurrent) {
@@ -34,7 +38,7 @@ $(document).ready(function() {
             $(this).find(".description").addClass("present");
         }
         // compares time-block hour to current hour and identifies and style timeblocks in the future
-        else {
+        else if (timeBlock > hourCurrent) {
             $(this).find(".description").removeClass("past");
             $(this).find(".description").removeClass("present");
             $(this).find(".description").addClass("future");
